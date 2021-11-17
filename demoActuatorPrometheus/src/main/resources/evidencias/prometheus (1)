@@ -1,0 +1,141 @@
+# TYPE jvm_threads_states_threads gauge
+# HELP jvm_threads_states_threads The current number of threads having NEW state
+jvm_threads_states_threads{state="runnable"} 13.0
+jvm_threads_states_threads{state="blocked"} 0.0
+jvm_threads_states_threads{state="waiting"} 10.0
+jvm_threads_states_threads{state="timed-waiting"} 16.0
+jvm_threads_states_threads{state="new"} 0.0
+jvm_threads_states_threads{state="terminated"} 0.0
+# TYPE jvm_gc_live_data_size_bytes gauge
+# HELP jvm_gc_live_data_size_bytes Size of long-lived heap memory pool after reclamation
+jvm_gc_live_data_size_bytes 0.0
+# TYPE tomcat_sessions_rejected_sessions counter
+# HELP tomcat_sessions_rejected_sessions  
+tomcat_sessions_rejected_sessions_total 0.0
+# TYPE tomcat_sessions_alive_max_seconds gauge
+# HELP tomcat_sessions_alive_max_seconds  
+tomcat_sessions_alive_max_seconds 0.0
+# TYPE jvm_gc_memory_promoted_bytes counter
+# HELP jvm_gc_memory_promoted_bytes Count of positive increases in the size of the old generation memory pool before GC to after GC
+jvm_gc_memory_promoted_bytes_total 8890368.0
+# TYPE jvm_gc_memory_allocated_bytes counter
+# HELP jvm_gc_memory_allocated_bytes Incremented for an increase in the size of the (young) heap memory pool after one GC to before the next
+jvm_gc_memory_allocated_bytes_total 9.6468992E7
+# TYPE system_cpu_usage gauge
+# HELP system_cpu_usage The \"recent cpu usage\" for the whole system
+system_cpu_usage 0.0
+# TYPE jvm_classes_unloaded_classes counter
+# HELP jvm_classes_unloaded_classes The total number of classes unloaded since the Java virtual machine has started execution
+jvm_classes_unloaded_classes_total 0.0
+# TYPE logback_events counter
+# HELP logback_events Number of error level events that made it to the logs
+logback_events_total{level="warn"} 0.0
+logback_events_total{level="debug"} 0.0
+logback_events_total{level="error"} 0.0
+logback_events_total{level="trace"} 0.0
+logback_events_total{level="info"} 7.0
+# TYPE process_start_time_seconds gauge
+# HELP process_start_time_seconds Start time of the process since unix epoch.
+process_start_time_seconds 1.637139840769E9
+# TYPE jvm_buffer_memory_used_bytes gauge
+# HELP jvm_buffer_memory_used_bytes An estimate of the memory that the Java virtual machine is using for this buffer pool
+jvm_buffer_memory_used_bytes{id="mapped - 'non-volatile memory'"} 0.0
+jvm_buffer_memory_used_bytes{id="mapped"} 0.0
+jvm_buffer_memory_used_bytes{id="direct"} 147456.0
+# TYPE process_uptime_seconds gauge
+# HELP process_uptime_seconds The uptime of the Java virtual machine
+process_uptime_seconds 85.503
+# TYPE invocaciones_hello counter
+# HELP invocaciones_hello Invocaciones totales
+invocaciones_hello_total 5.0
+# TYPE jvm_buffer_total_capacity_bytes gauge
+# HELP jvm_buffer_total_capacity_bytes An estimate of the total capacity of the buffers in this pool
+jvm_buffer_total_capacity_bytes{id="mapped - 'non-volatile memory'"} 0.0
+jvm_buffer_total_capacity_bytes{id="mapped"} 0.0
+jvm_buffer_total_capacity_bytes{id="direct"} 147456.0
+# TYPE tomcat_sessions_active_max_sessions gauge
+# HELP tomcat_sessions_active_max_sessions  
+tomcat_sessions_active_max_sessions 0.0
+# TYPE jvm_threads_peak_threads gauge
+# HELP jvm_threads_peak_threads The peak live thread count since the Java virtual machine started or peak was reset
+jvm_threads_peak_threads 39.0
+# TYPE jvm_threads_live_threads gauge
+# HELP jvm_threads_live_threads The current number of live threads including both daemon and non-daemon threads
+jvm_threads_live_threads 39.0
+# TYPE system_cpu_count gauge
+# HELP system_cpu_count The number of processors available to the Java virtual machine
+system_cpu_count 6.0
+# TYPE tomcat_sessions_expired_sessions counter
+# HELP tomcat_sessions_expired_sessions  
+tomcat_sessions_expired_sessions_total 0.0
+# TYPE jvm_memory_committed_bytes gauge
+# HELP jvm_memory_committed_bytes The amount of memory in bytes that is committed for the Java virtual machine to use
+jvm_memory_committed_bytes{area="heap",id="G1 Survivor Space"} 2097152.0
+jvm_memory_committed_bytes{area="heap",id="G1 Old Gen"} 3.5651584E7
+jvm_memory_committed_bytes{area="nonheap",id="Metaspace"} 4.325376E7
+jvm_memory_committed_bytes{area="nonheap",id="CodeCache"} 9502720.0
+jvm_memory_committed_bytes{area="heap",id="G1 Eden Space"} 3.3554432E7
+jvm_memory_committed_bytes{area="nonheap",id="Compressed Class Space"} 5767168.0
+# TYPE jvm_gc_max_data_size_bytes gauge
+# HELP jvm_gc_max_data_size_bytes Max size of long-lived heap memory pool
+jvm_gc_max_data_size_bytes 3.206545408E9
+# TYPE jvm_memory_max_bytes gauge
+# HELP jvm_memory_max_bytes The maximum amount of memory in bytes that can be used for memory management
+jvm_memory_max_bytes{area="heap",id="G1 Survivor Space"} -1.0
+jvm_memory_max_bytes{area="heap",id="G1 Old Gen"} 3.206545408E9
+jvm_memory_max_bytes{area="nonheap",id="Metaspace"} -1.0
+jvm_memory_max_bytes{area="nonheap",id="CodeCache"} 5.0331648E7
+jvm_memory_max_bytes{area="heap",id="G1 Eden Space"} -1.0
+jvm_memory_max_bytes{area="nonheap",id="Compressed Class Space"} 1.073741824E9
+# TYPE http_server_requests_seconds summary
+# HELP http_server_requests_seconds  
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus"} 1.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus"} 0.5386102
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/hellowWorld"} 5.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/hellowWorld"} 0.0125592
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator"} 1.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator"} 0.0339035
+# TYPE http_server_requests_seconds_max gauge
+# HELP http_server_requests_seconds_max  
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus"} 0.5386102
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/hellowWorld"} 0.0059607
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator"} 0.0339035
+# TYPE jvm_buffer_count_buffers gauge
+# HELP jvm_buffer_count_buffers An estimate of the number of buffers in the pool
+jvm_buffer_count_buffers{id="mapped - 'non-volatile memory'"} 0.0
+jvm_buffer_count_buffers{id="mapped"} 0.0
+jvm_buffer_count_buffers{id="direct"} 18.0
+# TYPE jvm_memory_used_bytes gauge
+# HELP jvm_memory_used_bytes The amount of used memory
+jvm_memory_used_bytes{area="heap",id="G1 Survivor Space"} 667776.0
+jvm_memory_used_bytes{area="heap",id="G1 Old Gen"} 1.6929792E7
+jvm_memory_used_bytes{area="nonheap",id="Metaspace"} 4.2728784E7
+jvm_memory_used_bytes{area="nonheap",id="CodeCache"} 9220096.0
+jvm_memory_used_bytes{area="heap",id="G1 Eden Space"} 1.048576E7
+jvm_memory_used_bytes{area="nonheap",id="Compressed Class Space"} 5528864.0
+# TYPE process_cpu_usage gauge
+# HELP process_cpu_usage The \"recent cpu usage\" for the Java Virtual Machine process
+process_cpu_usage 0.24904645094860797
+# TYPE jvm_classes_loaded_classes gauge
+# HELP jvm_classes_loaded_classes The number of classes that are currently loaded in the Java virtual machine
+jvm_classes_loaded_classes 8193.0
+# TYPE tomcat_sessions_created_sessions counter
+# HELP tomcat_sessions_created_sessions  
+tomcat_sessions_created_sessions_total 0.0
+# TYPE jvm_gc_pause_seconds summary
+# HELP jvm_gc_pause_seconds Time spent in GC pause
+jvm_gc_pause_seconds_count{action="end of minor GC",cause="Metadata GC Threshold"} 1.0
+jvm_gc_pause_seconds_sum{action="end of minor GC",cause="Metadata GC Threshold"} 0.004
+jvm_gc_pause_seconds_count{action="end of minor GC",cause="G1 Evacuation Pause"} 2.0
+jvm_gc_pause_seconds_sum{action="end of minor GC",cause="G1 Evacuation Pause"} 0.007
+# TYPE jvm_gc_pause_seconds_max gauge
+# HELP jvm_gc_pause_seconds_max Time spent in GC pause
+jvm_gc_pause_seconds_max{action="end of minor GC",cause="Metadata GC Threshold"} 0.004
+jvm_gc_pause_seconds_max{action="end of minor GC",cause="G1 Evacuation Pause"} 0.004
+# TYPE tomcat_sessions_active_current_sessions gauge
+# HELP tomcat_sessions_active_current_sessions  
+tomcat_sessions_active_current_sessions 0.0
+# TYPE jvm_threads_daemon_threads gauge
+# HELP jvm_threads_daemon_threads The current number of live daemon threads
+jvm_threads_daemon_threads 35.0
+# EOF
